@@ -1,0 +1,12 @@
+<mat-toolbar color="primary" class="navbar">
+  <span class="navbar-text">Свидание с Валери - A Date with Valerie</span>
+</mat-toolbar>
+<div class="calendar-container">
+  <p class="greeting">{{ greetingMessage }}</p>
+  <mat-hint>Please select a Date!</mat-hint>
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="selectedDate">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+  <button mat-raised-button (click)="notify()">Notify</button>
+  <p *ngIf="message" class="notify-text">{{ message }}</p>
+</div>
