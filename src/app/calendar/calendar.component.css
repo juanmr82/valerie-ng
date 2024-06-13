@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #4cd55c;
+  justify-content: center;
+}
+
+.navbar-text {
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+mat-datepicker {
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.notify-text{
+  margin-top: 10px;
+  color: green;
+}
